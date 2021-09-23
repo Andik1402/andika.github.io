@@ -460,7 +460,7 @@
         form.addEventListener('submit', e => {
             e.preventDefault();
             // 
-            // 
+            // display button loading and remove the submit button
             btnLoading.classList.toggle('d-none');
             btnSend.classList.toggle('d-none');
             fetch(scriptURL, {
@@ -468,12 +468,12 @@
                     body: new FormData(form)
                 })
                 .then(response => {
-                    // 
+                    // remove button loading and display submit button
                     btnLoading.classList.toggle('d-none');
                     btnSend.classList.toggle('d-none');
-                    // 
+                    // display alert dialog
                     myAlert.classList.toggle('d-none');
-                    // 
+                    // reset form
                     form.reset();
                     console.log('Success!', response)
                 })
