@@ -9,10 +9,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
 
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My css style -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- font awesome icon -->
+    <!-- title font awesome icon -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- title my website -->
     <title>ANDIKA FEBRIANTO</title>
@@ -93,14 +96,14 @@
                     </div>
                     <div class="row">
                         <!-- my photo -->
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="d-flex justify-content-center">
                                 <div class="photo text-center"></div>
                                 <img class="photoaboutme" src="img/photo.png" alt="myphoto" />
                             </div>
                         </div>
                         <!-- text about me -->
-                        <div class="col-md-9 d-flex align-items-center">
+                        <div class="col-md-9 d-flex align-items-center" data-aos="fade-left" data-aos-duaration="1000" data-aos-delay="200">
                             <p class="textaboutme text-justify">
                                 Hi Nama saya Andika Febrianto, saya adalah seorang front-end developer, UI/UX Designer dan network enginering. Ini adalah website portofolio yang berisikan project-project yang saya buat, jika anda tertarik silahkan menghubungi saya dengan kontak yang
                                 ada dibawah. Apabila anda ingin mengetahui ingin tahu tentang saya anda bisa melihat cv yang tertera.
@@ -136,7 +139,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <!-- project 1 -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="flip-left">
                     <div class="card" style="">
                         <img src="img/Group4.png" class="card-img-top" alt="1">
                         <div class="card-body">
@@ -145,7 +148,7 @@
                     </div>
                 </div>
                 <!-- project 2 -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
                     <div class="card" style="">
                         <img src="img/Group4.png" class="card-img-top" alt="2">
                         <div class="card-body">
@@ -154,7 +157,7 @@
                     </div>
                 </div>
                 <!-- project 3 -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
                     <div class="card" style="">
                         <img src="img/Group4.png" class="card-img-top" alt="3">
                         <div class="card-body">
@@ -163,7 +166,7 @@
                     </div>
                 </div>
                 <!-- project 4 -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="flip-left">
                     <div class="card" style="">
                         <img src="img/Group4.png" class="card-img-top" alt="4">
                         <div class="card-body">
@@ -172,7 +175,7 @@
                     </div>
                 </div>
                 <!-- project 5 -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" data-aos="flip-left">
                     <div class="card" style="">
                         <img src="img/Group4.png" class="card-img-top" alt="5">
                         <div class="card-body">
@@ -299,7 +302,7 @@
             <!-- card my service -->
             <div class="row justify-content-center mb-5 mt-5">
                 <!-- UI/UX Designer -->
-                <div class="col-md-4 col-sm-4 mb-2">
+                <div class="col-md-4 col-sm-4 mb-2" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card dev">
                         <i class="fab fa-uikit text-center mt-5 icon"></i>
                         <div class="card-body">
@@ -309,7 +312,7 @@
                     </div>
                 </div>
                 <!-- Web Development -->
-                <div class="col-md-4 col-sm-4 mb-2">
+                <div class="col-md-4 col-sm-4 mb-2" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
                     <div class="card dev">
                         <i class="fas fa-file-code text-center mt-5 icon"></i>
                         <div class="card-body">
@@ -319,7 +322,7 @@
                     </div>
                 </div>
                 <!-- Network -->
-                <div class="col-md-4 col-sm-4 mb-2">
+                <div class="col-md-4 col-sm-4 mb-2" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="1000">
                     <div class="card dev">
                         <i class="fas fa-server text-center mt-5 icon"></i>
                         <div class="card-body">
@@ -362,17 +365,17 @@
                         <!-- email -->
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+                            <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required>
                         </div>
                         <!-- name -->
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="name" class="form-control" id="name" aria-describedby="name" name="name">
+                            <input type="name" class="form-control" id="name" aria-describedby="name" name="name" required>
                         </div>
                         <!-- message -->
                         <div class="mb-3">
                             <label for="message" class="form-label">message</label>
-                            <textarea class="form-control" id="message" rows="5" name="message"></textarea>
+                            <textarea class="form-control" id="message" rows="5" name="message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-send">
                             <i class="far fa-paper-plane"></i>
@@ -449,6 +452,12 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <!-- form apps -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyfG9qhxMTV4OaKUx3DMnqVc0pb2K6tbBAz17cShyZHntmGaG5uNhgVTdKHQ4uB50fEEg/exec'
@@ -475,8 +484,10 @@
                     myAlert.classList.toggle('d-none');
                     // reset form
                     form.reset();
+                    // display console success
                     console.log('Success!', response)
                 })
+                // display console error
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
